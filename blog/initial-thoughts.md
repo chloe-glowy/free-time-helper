@@ -58,7 +58,7 @@ As usual I will be using the [Clean Architecture](https://blog.cleancoder.com/un
 
 To start out with, I tried to imagine the system as having a lot of advanced features, most of which I will probably never get to, and make sure that the interfaces work with all of these. Some advanced features:
 
-1. Machine learning to estimate how "helpful" (intentionally vague) each suggestion will be for each user
+1. Machine learning to estimate how "helpful" (this is intentionally vague) each suggestion will be for each user
 1. A system-initiated communication channel (i.e., notifications) where the system can proactively make suggestions to the user
 1. Extensions, to allow the user to provide additional information about themself to the system automatically, via integrations with other software systems that already have information about them
 1. End to end encryption
