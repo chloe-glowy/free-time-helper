@@ -1,6 +1,6 @@
 # Free Time Helper
 
-I'm thinking of starting a new project called Free Time Helper. In this article, I will have two parts:
+I'm thinking of starting a new project called Free Time Helper. This article has two parts:
 
 1. What is the project? What are the core use cases?
 2. What are the APIs? What is the core of the architecture?
@@ -11,37 +11,42 @@ I'm thinking of starting a new project called Free Time Helper. In this article,
 
 1. I don't know what I want to do right now
 1. I ask the system what to do. I tell it how much **free time\*** I have right now.
-1. The system may respond in one of two ways:
-   1. Ask for Information (e.g., what's something that energizes you? what's your best friend's name? etc.)
-   1. Give a suggestion (e.g., text {best friend}, or {do thing that energizes you}, or spend 5 minutes outside, or listen to your favorite song, etc.)
+1. The system gives a Suggestion, which may either be a Question or an Activity.
 
 \* **free time**: how much time is there between now and the next time I intend to do something else, such as get ready for bed, go to work, leave for an appointment, etc.?
 
 ### System-initiated Flow:
 
-1. The system gives me a suggestion
+1. The system gives a Suggestion
 
-### Ask for Information
+### Question
 
-1. The system asks me a question
+1. The system asks me a question. For example:
+   1. What's something that energizes you?
+   1. What's your best friend's name?
 1. I can either:
    1. Send an answer to the system
-      1. The system returns to #3 in the basic flow
+      1. The system gives a new Suggestion
    1. Tell the system "I don't want to answer this question right now"
-      1. The system returns to #3 in the basic flow
+      1. The system gives a new Suggestion
    1. Do nothing
       1. The system does not communicate with me until I initiate contact with it again
 
-### Give a suggestion
+### Activity
 
-1. The system gives me a suggestion
+1. The system suggests an activity. For example:
+   1. text {best friend}
+   1. do {thing that energizes you}
+   1. spend 5 minutes outside
+   1. listen to your favorite song
+   1. Read a specific article
 1. I can either:
    1. Tell the system I accept the suggestion
-      1. I take some time to do the suggested activity. The activity may or may not involve interacting with the system further (e.g., the activity may be an experience in the app, like playing a game or reading something, or it may be something outside the app like going for a walk.)
+      1. I take some time to do the suggested activity
       1. I tell the system I am done with the suggested activity.
-      1. The system returns to #3 in the basic flow
+      1. The system gives a new Suggestion
    1. Tell the system I do not accept the suggestion
-      1. The system returns to #3 in the basic flow
+      1. The system gives a new Suggestion
    1. Do nothing
       1. The system does not communicate with me until I initiate contact with it again
 
@@ -63,7 +68,7 @@ Additionally, I thought about different ways the system could be deployed, and t
 1. The system could be deployed using any database or persistence framework
 1. The system could be deployed using a traditional, separated client-server-database architecture, or it could run entirely on a single machine (e.g., a phone) with the option to have cloud backups. This would allow support for end-to-end encryption.
 1. It could use any (or no) API framework or RPC framework
-1. The user interface could use any communication medium, including a webpage, a mobile phone app, an Alexa skill, a doll that follows you around and talks to you, or a chip in your brain
+1. The user interface could use any communication medium, including a webpage, a mobile phone app, an Alexa skill, a chatbot, a doll that follows you around and talks to you, or a chip in your brain
 1. It could be implemented in any programming language and run on any machine
 1. In fact, it could be implemented as a protocol written in English and put in a binder for a person to follow. They could accept calls over the phone. The user facts storage implementation could be a filing cabinet, the suggestions catalogue could be a binder, the prediction model could be a person who gives an estimate based on their intuition, and notifications could be implemented by another person who calls the user on the phone.
 
