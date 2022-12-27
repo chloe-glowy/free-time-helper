@@ -12,8 +12,8 @@ I'm thinking of starting a new project called Free Time Helper. In this article,
 1. I don't know what I want to do right now
 1. I ask the system what to do. I tell it how much **free time\*** I have right now.
 1. The system may respond in one of two ways:
-   1. Ask for Information
-   1. Give a suggestion
+   1. Ask for Information (e.g., what's something that energizes you? what's your best friend's name? etc.)
+   1. Give a suggestion (e.g., text {best friend}, or {do thing that energizes you}, or spend 5 minutes outside, or listen to your favorite song, etc.)
 
 \* **free time**: how much time is there between now and the next time I intend to do something else, such as get ready for bed, go to work, leave for an appointment, etc.?
 
@@ -37,7 +37,7 @@ I'm thinking of starting a new project called Free Time Helper. In this article,
 1. The system gives me a suggestion
 1. I can either:
    1. Tell the system I accept the suggestion
-      1. I take some time to do the suggested activity. The activity may or may not involve interacting with the system further (e.g., the activity may be an experience in the app, or it may be something like going for a walk.)
+      1. I take some time to do the suggested activity. The activity may or may not involve interacting with the system further (e.g., the activity may be an experience in the app, like playing a game or reading something, or it may be something outside the app like going for a walk.)
       1. I tell the system I am done with the suggested activity.
       1. The system returns to #3 in the basic flow
    1. Tell the system I do not accept the suggestion
