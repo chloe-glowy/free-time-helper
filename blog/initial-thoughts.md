@@ -2,8 +2,8 @@
 
 I'm thinking of starting a new project called Free Time Helper. In this article, I will have two parts:
 
-1. What are the core use cases?
-2. What are the APIs? i.e., what is the core of the architecture?
+1. What is the project? What are the core use cases?
+2. What are the APIs? What is the core of the architecture?
 
 ## Use Cases
 
@@ -54,14 +54,14 @@ As usual I will be using the [Clean Architecture](https://blog.cleancoder.com/un
 To start out with, I tried to imagine the system as having a lot of advanced features, most of which I will probably never get to, and make sure that the interfaces work with all of these. Some advanced features:
 
 1. Machine learning to estimate how "helpful" (intentionally vague) each suggestion will be for each user
-1. An offline communication channel (i.e., notifications) where the system can proactively make suggestions to the user
+1. A system-initiated communication channel (i.e., notifications) where the system can proactively make suggestions to the user
 1. Extensions, to allow the user to provide additional information about themself to the system automatically, via integrations with other software systems that already have information about them
 1. End to end encryption
 
 Additionally, I thought about different ways the system could be deployed, and tried to make sure the Core component does not depend on any specific one. For example:
 
 1. The system could be deployed using any database or persistence framework
-1. . The system could be deployed using a traditional separated client-server-database architecture, or it could run entirely on a single machine (e.g., a phone) with the option to have cloud backups. This would allow support for end-to-end encryption.
+1. The system could be deployed using a traditional, separated client-server-database architecture, or it could run entirely on a single machine (e.g., a phone) with the option to have cloud backups. This would allow support for end-to-end encryption.
 1. It could use any (or no) API framework or RPC framework
 1. The user interface could use any communication medium, including a webpage, a mobile phone app, an Alexa skill, a doll that follows you around and talks to you, or a chip in your brain
 1. It could be implemented in any programming language and run on any machine
@@ -73,4 +73,6 @@ As a final part of this exercise (for now), I pared down the diagram to contain 
 
 ![Pared down architecture](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5ihwu4nvlx8suxoo8tx4.png)
 
-The next step is to flesh out all the interfaces. What exactly are the fields in all the objects that are passed in and out of the methods and plugins?
+My next goal is to flesh out all the interfaces. What exactly are the fields in all the objects that are passed in and out of the methods and plugins?
+
+As a next step towards this, I think it would be helpful to write out some examples of suggestions (activities and questions), actions a user took, and what the catalogue (set of information that helps us decide what activities a user might be interested in based on their history) might look like.
