@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["Alexa", "themself"]
+  "cSpell.words": ["Alexa", "themself"],
+  "prettier.proseWrap": "never"
 }
