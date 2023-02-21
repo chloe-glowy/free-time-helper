@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="FreeTimeHelper" />
+        <module name="FreeTimeHelperCore" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="FreeTimeHelper" target="16" />
+      <module name="FreeTimeHelperCore" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>

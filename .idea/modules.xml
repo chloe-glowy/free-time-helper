@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/java-proj/FreeTimeHelper.iml" filepath="$PROJECT_DIR$/java-proj/FreeTimeHelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/free-time-helper-core/FreeTimeHelperCore.iml" filepath="$PROJECT_DIR$/free-time-helper-core/FreeTimeHelperCore.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/free-time-helper.iml" filepath="$PROJECT_DIR$/.idea/free-time-helper.iml" />
     </modules>
   </component>
